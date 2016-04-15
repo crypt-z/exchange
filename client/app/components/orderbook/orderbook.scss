@@ -5,44 +5,35 @@ svg {
 
 .ob-wrap {
   margin-top: 5px;
-  position: relative;
+  position: absolute;
+  width: 1200px;
   height: 100%;
 }
 
 .chart {
   margin: 0 5%;
   background-color:#FFFFFF;
-  height: 500px;
-  width: 35%;
+  height: 700px;
+  width: 400px;
   display: inline-block;
 }
 
 .orderbookRow {
   position: relative;
-  height: 400px;
-  width: 100%;
+
 }
 
 .orderbookRowMiddle {
   position: relative;
   top: 50%;
   height: 35px;
-  width: 100%;
 }
 
-.orderbookAsksCol {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  vertical-align: bottom;
-  overflow: hidden;
-}
+
 
 .orderbookMidline {}
 .orderbookBidsCol {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  position: relative;
   overflow: hidden;
 }
 
@@ -53,20 +44,14 @@ svg {
 }
 
 .orderbook{
-  position: relative;
-  width: 100%;
-  height: 100%;
+position: relative;
+
 }
 
 .tx {
-  position: relative;
-  width: 20%;
-  height: 800px;
-  border-left: 1px solid #dfdfdf;
-  border-bottom: 1px solid #dfdfdf;
-  border-right: 1px solid #dfdfdf;
-  border-top: 2px solid #c50000;
-  border-radius: 2px;
+float: left;
+border-radius: 2px;
+width: 200px;
 }
 
 .close {
@@ -74,37 +59,40 @@ svg {
   position: relative;
   width: 100%;
   height: 33px;
-  font-size: .65em;
   background: black;
 }
 
 .askLabel {
-  position: absolute;
-  left: 45%;
+  float: right;
   color: red;
 }
 
 .bidLabel {
-  position: absolute;
-  left: 45%;
+  float: right;
   bottom: 0;
-  color: lightgreen;
+  color: green;
 }
 
+.lastPrice {
+  color: white;
+  left: 50%;
+  margin-top: 7px;
+  margin-right: 5px;
+  float: right;
+}
 .priceLabel {
   float: left;
-  font-size: 2em;
 }
 
 .volumeLabel {
   float: right;
-  font-size: 2em;
 }
 .execution > h5 {
   margin: 0;
   padding: 2px;
   background-color: black;
-  color: darkgrey;
+  color: white;
+
 }
 
 .execDetails {
@@ -123,7 +111,7 @@ svg {
 
 .execution {
   border: 1px solid #dfdfdf;
-  border-top: 2px solid #c50000;
+
   border-radius: 2px;
   width: 100%;
 }
@@ -131,7 +119,7 @@ svg {
 .wallet {
   background: #ffffff;
   height: 200px;
-  width: 300px;
+  width: 400px;
   margin-top:210px;
   position: absolute;
   margin-left: 78%;
@@ -147,41 +135,11 @@ svg {
   float: right;
 }
 
+
 .orderForm > button {
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  flex: 1 1 auto;
-  margin: 5% 0 2% 42%;
-  padding: 8px 15px;
-  border: 2px solid #beb8b8;
-  text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  overflow:hidden;
-  background: transparent;
-  transition: .3s;
-  &:after {
-    position: absolute;
-    transition: .3s;
-    content: '';
-    width: 0;
-    left: auto;
-    right: 0;
-    bottom: 0;
-    height: 3px;
-    background: #beb8b8;
-  }
-  &:hover {
-    cursor: pointer;
-    &:after {
-      width: 100%;
-      left: 0;
-    }
-  }
+  padding: 20px;
+    width: 100%
+
 }
 
 div.tx {
@@ -191,7 +149,7 @@ div.tx {
 div.orderbook-right-col {
   float: right;
   display: inline-block;
-  width: 28%;
+  width: 400px;
   margin-right: 10px;
 }
 

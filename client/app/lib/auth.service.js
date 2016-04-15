@@ -1,5 +1,5 @@
 (function(){
-  angular.module('FlyptoX.authService', []).
+  angular.module('ChainTrader.authService', []).
   factory('AuthService', ['$http', '$state', '$window', function($http, $state, $window){
     var auth = {};
     // user: {email:string, password:string}

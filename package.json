@@ -1,5 +1,5 @@
 {
-  "name": "FlyptoX",
+  "name": "ChainTrader",
   "version": "0.1.0",
   "main": "server/main.js",
   "scripts": {
@@ -44,6 +44,7 @@
     "bluebird": "",
     "body-parser": "",
     "bookshelf": "",
+    "bootstrap": "^3.3.6",
     "browser-sync": "",
     "coinbase-exchange": "",
     "debug": "",

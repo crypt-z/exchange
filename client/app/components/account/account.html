@@ -2,9 +2,9 @@
 <div class="account">
   <!-- Section Navigation -->
   <div class="sections">
-    <a ng-click="section='history'">Account History</a>
-    <a ng-click="section='wallets'">Add Account / Wallet</a>
-    <a ng-click="section='settings'">Settings</a>
+    <a class="btn btn-primary" ng-click="section='history'">Account History</a>
+    <a class="btn btn-primary"g-click="section='wallets'">Add Account / Wallet</a>
+    <a class="btn btn-primary"ng-click="section='settings'">Settings</a>
   </div>
 
   <!-- Latest (Transactions | Trades | Orders) -->
@@ -12,9 +12,9 @@
     <h1>Last 20 {{filter}}</h1>
     <!-- Filter Buttons -->
     <div class="filters">
-      <button ng-click="filter='orders'">Orders</button>
-      <button ng-click="filter='trades'">Trades</button>
-      <button ng-click="filter='transactions'">Transactions</button>
+      <button class="btn btn-default"ng-click="filter='orders'">Orders</button>
+      <button class="btn btn-default"ng-click="filter='trades'">Trades</button>
+      <button class="btn btn-default"ng-click="filter='transactions'">Transactions</button>
     </div>
 
     <!-- Record Listing -->

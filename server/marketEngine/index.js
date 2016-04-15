@@ -4,6 +4,6 @@
 var marketEngine = module.exports;
 marketEngine.placeOrder = require('./orderDesk');
 marketEngine.start = function(){
-  console.log('Starting HeartOfGold trade engine.')
+  console.log('Starting ChainTrader engine.')
   require('./matcher');
 };

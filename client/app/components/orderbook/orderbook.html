@@ -1,5 +1,6 @@
 <div class="ob-wrap">
-  <div class="tx" ng-init="getBook()">
+
+    <div class="tx" ng-init="getBook()">
     <table class="orderbook">
       <tr class="orderbookRow"><td class="orderbookAsksCol">
         <div class="offerListItem" ng-repeat="a in asks">
@@ -12,10 +13,7 @@
       </td></tr>
       <tr class="orderbookRowMiddle"><td class="orderbookMidlineCol">
         <div class="close">
-          <span class="askLabel">Ask</span>
-          <span class="bidLabel">Bid</span>
-          <span class="priceLabel">Price</span>
-          <span class="volumeLabel">Volume</span>
+          <span class="lastPrice">{{ lastTrade.price | currency}}<span>
         </div>
       </td></tr>
       <tr class="orderbookRow"><td class="orderbookBidsCol">
@@ -30,7 +28,7 @@
     </table>
   </div>
 
-  <div ng-controller="chartCtrl" class="chart">
+    <div ng-controller="chartCtrl" class="chart">
           <nvd3 options="options" data="priceData"></nvd3>
   </div>
 
@@ -101,3 +99,4 @@
     </div>
   </div>
 </div>
+

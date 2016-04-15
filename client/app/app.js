@@ -2,21 +2,21 @@
 
   // INITIALIZATION
   //---------------------------------------------------------
-  // Dependencies for module 'FlyptoX'
+  // Dependencies for module 'ChainTrader'
   var dependencies = [
     'ui.router',
-    'FlyptoX.api',
-    'FlyptoX.auth',
-    'FlyptoX.orderbook',
-    'FlyptoX.chart',
-    'FlyptoX.authService',
-    'FlyptoX.account'
+    'ChainTrader.api',
+    'ChainTrader.auth',
+    'ChainTrader.orderbook',
+    'ChainTrader.chart',
+    'ChainTrader.authService',
+    'ChainTrader.account'
   ];
 
-  // Create a new module named 'FlyptoX' using 'dependencies'.
+  // Create a new module named 'ChainTrader' using 'dependencies'.
   // This is the main module for the app, and is expected by
   // the ng-app directive in index.html.
-  var app = angular.module('FlyptoX', dependencies);
+  var app = angular.module('ChainTrader', dependencies);
 
   // ROUTING
   //---------------------------------------------------------

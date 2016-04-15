@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('FlyptoX.auth', []);
+  var app = angular.module('ChainTrader.auth', []);
   app.controller('AuthController', ['$scope', '$window', '$state', 'AuthService',
     function ($scope, $window, $state, AuthService) {
       $scope.user = {};

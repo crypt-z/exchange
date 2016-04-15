@@ -1,5 +1,5 @@
 (function(){
-var app = angular.module('FlyptoX.chart', ['nvd3']);
+var app = angular.module('ChainTrader.chart', ['nvd3']);
 
 app.controller('chartCtrl', ['$scope', '$interval', '$http', function($scope, $interval, $http){
   $scope.options = {

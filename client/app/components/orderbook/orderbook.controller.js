@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('FlyptoX.orderbook', []);
+  var app = angular.module('ChainTrader.orderbook', []);
 
   app.controller('OrderbookCtrl', ['$scope', '$http', 'AuthService', 'APIService',
     function($scope, $http, AuthService, APIService) {

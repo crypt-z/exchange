@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('FlyptoX.account', []);
+  var app = angular.module('ChainTrader.account', []);
 
   app.controller('AccountCtrl', ['$scope', '$http', 'APIService',
     function($scope, $http, APIService) {

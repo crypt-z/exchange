@@ -1,5 +1,5 @@
 (function() {
-  angular.module('FlyptoX.api', [])
+  angular.module('ChainTrader.api', [])
     .factory('APIService', ['$http', function($http) {
       return {
 
