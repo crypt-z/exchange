@@ -1,0 +1,21 @@
+<header>
+  <nav>
+    <a class="home" ui-sref="landing.home">FlyptoX || Currency Exchange</a>
+    <span class="nav-ticker" ng-class="tickType">Last Trade: {{ lastTrade.price | currency}}</span>
+    <span class="nav-rest">
+      <a ui-sref=".account" ng-if="auth.isAuth()">Account</a>
+      <a ui-sref=".marketview">Market View</a>
+      <a ui-sref=".login" ng-if="!auth.isAuth()">Log In</a>
+      <a ng-click="auth.signout()" ng-if="auth.isAuth()">Log Out</a>
+      <a class="sign-up" ui-sref=".signup" ng-if="!auth.isAuth()">Sign Up</a>
+    </span>
+  </nav>
+</header>
+
+<section>
+  <div ui-view></div>
+</section>
+
+<footer>
+  &copy; 2015 <a href="https://github.com/flipsidehr">Flipside</a>
+</footer>

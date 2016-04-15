@@ -1,0 +1,63 @@
+<!-- Container -->
+<div class="account">
+  <!-- Section Navigation -->
+  <div class="sections">
+    <a ng-click="section='history'">Account History</a>
+    <a ng-click="section='wallets'">Add Account / Wallet</a>
+    <a ng-click="section='settings'">Settings</a>
+  </div>
+
+  <!-- Latest (Transactions | Trades | Orders) -->
+  <div class=" history" ng-show="section === 'history'">
+    <h1>Last 20 {{filter}}</h1>
+    <!-- Filter Buttons -->
+    <div class="filters">
+      <button ng-click="filter='orders'">Orders</button>
+      <button ng-click="filter='trades'">Trades</button>
+      <button ng-click="filter='transactions'">Transactions</button>
+    </div>
+
+    <!-- Record Listing -->
+    <table class="records">
+      <tr class="headings">
+        <th ng-repeat="column in columns[filter]">{{column}}</th>
+      </tr>
+      <tr class="record" ng-repeat="record in records[filter] | limitTo: 20">
+        <td ng-repeat="column in columns[filter]">{{record[column]}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Add Account / Wallet -->
+  <div class="wallets" ng-show="section === 'wallets'">
+    <h1>Wallet Balances</h1>
+    <table>
+      <tr class="headings">
+        <th>Currency</th>
+        <th>Total Balance</th>
+        <th>Available Balance</th>
+      </tr>
+      <tr class="record">
+        <td>USD</td>
+        <td>{{balances['usd'] | currency}}</td>
+        <td>{{balances['usd-available'] | currency}}</td>
+      </tr>
+      <tr class="record">
+        <td>BTC</td>
+        <td>{{balances['btc']}}</td>
+        <td>{{balances['btc-available']}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Settings -->
+  <div class="settings" ng-show="section === 'settings'">
+    <h1>Account Settings</h1>
+    <form class="settingsForm">
+      <label><span class="br">First Name:</span><input type="text" placeholder="First Name"></label>
+      <label><span class="br">Last Name:</span><input type="text" placeholder="Last Name"></label>
+      <label><span class="br">Email:</span><input type="text" placeholder="me@example.com"></label>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+.log {
+  width: 90%;
+  min-width: 340px;
+  margin: auto;
+}
+
+.log > h3 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loginBox {
+  margin: 100px auto;
+  padding: 10px;
+  width: 45%;
+  color: white;
+}
+
+.log > input {
+  -webkit-appearance: textfield;
+  display: block;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f7f7f7;
+  border: 1px solid #dfdfdf;
+  font-size: 14px;
+  outline: none;
+}
+
+.log > input:focus {
+  border: 1px solid #b2b2b2;
+  background: #fff;
+}
+
+.log > a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.log > a:hover {
+  color: #c50000;
+}
+
+.log > button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 5px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.log > input, .log > button {
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+
+.log > button:hover {
+  background: #2d7fdd;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0.01s;
+  -moz-transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -moz-transition-delay: 0.01s;
+  -o-transition-property: all;
+  -o-transition-duration: 0.25s;
+  -o-transition-timing-function: ease-in-out;
+  -o-transition-delay: 0.01s;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.01s;
+  cursor: pointer;
+}

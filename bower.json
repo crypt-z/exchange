@@ -1,0 +1,21 @@
+{
+  "name": "FlyptoX",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*"
+  ],
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.26",
+    "angular-mocks": "1.2.26",
+    "angular-chartist.js": "~3.3.6",
+    "mocha": "~2.2.5",
+    "chai": "~3.1.0",
+    "angular-ui-router": "~0.2.15",
+    "socket.io-client": "~1.3.6",
+    "rickshaw": "~1.5.1"
+  },
+  "resolutions": {
+    "angular": "^1.2.28"
+  }
+}
