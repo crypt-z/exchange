@@ -12,7 +12,7 @@ process.argv.forEach(function(val){
   }
 });
 
-// if use used the setup argument `./flyptox setup`
+// if use used the setup argument `./chaintrader setup`
 if (setup){
   runSetup();
 } else {
@@ -24,7 +24,7 @@ if (setup){
 function runSetup(){
 
   var banner = '-------------------------------\n' +
-               'FlyptoX Setup Tool\n' +
+               'ChainTrader Setup Tool\n' +
                '---------------------------------' +
                ' Skip this step for development. ' +
                '                                 ' +
@@ -147,7 +147,7 @@ function runAdminTool() {
   var chalk = require('chalk');
 
   var banner = '-----------------------------\n' +
-               'FlyptoX Administration Tool\n' +
+               'ChainTrader Administration Tool\n' +
                '-----------------------------';
 
   // display an intro banner
