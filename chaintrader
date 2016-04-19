@@ -1,7 +1,7 @@
 #!/usr/local/bin/node
 "use strict";
 
-
+//chaintrader 
 // track if we are doing a package setup
 var setup = false;
 
